@@ -1,4 +1,4 @@
-package com.naman.paymentsystem.config;
+package com.naman.paymentsystem.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
