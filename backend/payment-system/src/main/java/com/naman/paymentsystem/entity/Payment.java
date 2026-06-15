@@ -12,7 +12,7 @@ import java.util.List;
 
 
 @Entity
-@Table(name = "payments")
+@Table(name = "payments", uniqueConstraints = {@UniqueConstraint(columnNames = {"merchant_order_id", "merchant_id"})})
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor

@@ -1,5 +1,6 @@
 package com.naman.paymentsystem.dto;
 
+import lombok.Builder;
 import lombok.Data;
 
 public class PciRequestDto {
@@ -13,6 +14,7 @@ public class PciRequestDto {
     }
 
     @Data
+    @Builder
     public static class Detokenize {
         private String token;
     }

@@ -12,7 +12,6 @@ public interface MerchantRepository extends JpaRepository<Merchant, Long> {
 
     boolean existsByEmail(String email);
 
-    boolean existsByMerchantName(String merchantName);
 
     Optional<Merchant> findByApiKeyAndSecretKey(
             String apiKey,

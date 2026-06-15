@@ -1,5 +1,6 @@
 package com.naman.paymentsystem.dto;
 
+import com.naman.paymentsystem.entity.CardToken;
 import lombok.Data;
 
 import java.math.BigDecimal;
@@ -25,7 +26,7 @@ public class PaymentRequestDto {
 
     @Data
     public static class ProcessPayment {
-        private Long paymentId;
+        private String sessionId;
         private String token;
     }
 
